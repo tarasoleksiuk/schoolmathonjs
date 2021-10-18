@@ -1,4 +1,3 @@
-
 console.log('\x1Bc'); // Очищення консолі
 /*
 Задачі:
@@ -142,7 +141,7 @@ function longDivision(divident, divisor) {
   //Якщо 1-неповне ділене поділити на дільник буде = 1, то неповне ділене дорівнює дільнику - записуємо 1 в частку
   if (incompletelyDivided == divisor) {
     console.log(`Перше неповне ділене  = дільнику, записуємо 1 в частку`);
-    result=+1;
+    result = +1;
   }
   // 2. Зменшуємо перше неповне ділене на 1 допоки це число не буде ділитися на дільник націло.
 
@@ -155,8 +154,3 @@ function longDivision(divident, divisor) {
 }
 
 
-
-
-longDivision(61, 5);
-
-console.log([1,2,3,4,,5,6]);

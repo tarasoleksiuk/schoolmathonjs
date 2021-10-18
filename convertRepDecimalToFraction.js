@@ -95,6 +95,6 @@ function convertRepDecimalToFraction(strNumber) {
 }
 
 //ТЕСТИ
-let someStrNum = '2.000(66666)';
+let someStrNum = '0.11(7)';
 
-console.log('~ convertRepDecimalToFraction', convertRepDecimalToFraction(someStrNum));
+console.log(`Перетворимо нескінчений періодичний дріб ${someStrNum} на звичайний `, convertRepDecimalToFraction(someStrNum));

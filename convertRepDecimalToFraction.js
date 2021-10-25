@@ -1,3 +1,5 @@
+console.log('\x1Bc');
+console.clear();
 /*
 Правило перетворення нескінченного переіодичного дробу в звичайний:
 Для того щоб перетворити нескінчений періодичний дріб на звичайний,
@@ -95,6 +97,6 @@ function convertRepDecimalToFraction(strNumber) {
 }
 
 //ТЕСТИ
-let someStrNum = '0.11(7)';
+let someStrNum = '0.(2)';
 
 console.log(`Перетворимо нескінчений періодичний дріб ${someStrNum} на звичайний `, convertRepDecimalToFraction(someStrNum));

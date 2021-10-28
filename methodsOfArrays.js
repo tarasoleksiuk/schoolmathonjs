@@ -269,20 +269,144 @@ This method returns a new array without modifying any existing arrays.
 
 
 //forEach
+// const family = ['Oksana','Andriy', ,'Maria','Liuba','Tarik'];
 
+// let familyReturn = family.forEach( (element,index) => {
+// console.log('My name is ' + element);
+// })
+
+
+//console.log('~ familyReturn', familyReturn); // undefined
 
 //Map
 
+// let cars = [1,2,3,4];
 
-//filter
+// let myCar = cars.map(function(elem,index,arr){
+//     return elem * 2;
+    
+// })
+
+// console.log('~ cars', cars);
+// console.log('~ myCar', myCar);
+
+// let family = [
+//     {name:'Tarik', age:15, money:1000},
+//     {name:'Andriy', age:20, money:2000},
+//     {name:'Oksana', age:25, money:3000},
+// ]
+
+// let allowAlchogol = family.map(function(elem){
+// if (elem.age >= 18){
+//     return elem.name;
+// }
+// return elem.name + ' Пити не можна';
+// })
+// console.log('~ allowAlchogol', allowAlchogol);
+
+
+//
+// //filter
+// let family = [
+//     {name:'Tarik', age:15, money:1000},
+//     {name:'Andriy', age:20, money:2000},
+//     {name:'Oksana', age:25, money:3000},
+// ]
+
+// // let less18 = family.filter(function(elem,index,arr){
+// //    return elem.age <= 18   
+// // });
+
+// // console.log('~ family', family);
+// // console.log('~ less18', less18);
+
+// // let moreThan1000 = family.filter( elem => elem.money > 1000);
+// // console.log('~ moreThan1000', moreThan1000);
+
+// let specificFiler = family.filter(function(elem){
+//   if (elem.age <= 20 && elem.money > 1000 ){
+//       return true;
+//   }
+
+// })
+// console.log('~ specificFiler', specificFiler);
 
 //find
+// let names = ['Ivan','Tarik','Oksana','Maria'];
+
+// let namesOf5Letters = names.find( function(elem,index,array){
+//     return elem.length === 5; 
+// } );
+
+// console.log('~ names', names);
+// console.log('~ namesOf5Letters', namesOf5Letters);
+
+
+
+//
+//findIndex
+// let names = ['Ivan','Tarik','Oksana','Maria'];
+
+// let namesOf5Letters = names.findIndex( function(elem,index,array){
+//     return elem.length === 10; 
+// } );
+
+// console.log('~ names', names);
+// console.log('~ namesOf5Letters', namesOf5Letters);
+
+
+// //indexOf
+
+// let names = ['Ivan','Tarik','Oksana','Maria'];
+
+// let indexOfTarik = names.indexOf('Tarik');
+// let indexOfOksana = names.indexOf('Oksana',-3);
+
+// console.log('~ indexOfTarik', indexOfTarik);
+// console.log('~ indexOfOksana', indexOfOksana);
+
+
+// console.log('~ names', names);
+
+
+
+
+
+
+
+// let men = [
+//     // {name:'Tarik', age: 18},
+//     // {name:'Boris', age: 12},
+//     // {name:'Vlad', age: 13},
+//     // {name:'Max', age: 15},
+//     // {name:'Valdemar', age: 7},
+// ];
+//every
+// let isReadyGrouoForArmy = men.every(function(elem,index,arr){
+//     return elem.age >=18;
+// });
+
+// console.log('~ men', men);
+// console.log('~ isReadyGrouoForArmy', isReadyGrouoForArmy);
 
 //some
 
-//every
+// let isMenReadyForArmy = men.some( (elem,index,arr)=>{
+
+//     return elem.age >= 18;
+// } )
+// console.log('~ isMenReadyForArmy', isMenReadyForArmy);
 
 //reduce
 
+//return the sum of all the elements in an array
 
+// let numbers = [1,2,3,4,5];
+// let initialValue = 0;
 
+// let sumOfNumbers = numbers.reduce(function(previousValue,currentValue,currentIndex,array){
+//     return previousValue + currentValue;
+// });
+
+// console.log('~ numbers', numbers);
+// console.log('~ sumOfNumbers', sumOfNumbers);
